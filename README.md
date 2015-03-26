@@ -1,2 +1,2 @@
 # dots
-environment files
+environment files for vim etc
