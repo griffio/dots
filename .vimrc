@@ -1,11 +1,21 @@
-" colorscheme solarized
+execute pathogen#infect()
+
+" pathogen should be above all"
+
+let g:solarized_termtrans=1 " document default transparency enabled
+let g:solarized_termcolors=16 " document default 16 colours
+
 syntax enable " syntax category terms  ~/.vim/syntax/<type>
+
 filetype indent on " file type indenting from ~/.vim/indent/<type>
 
 set autoindent " follows indentation from previous line
+set background=light " solarized
 set backspace=indent,eol,start " standard backspacing
+set backupdir=~/.vim/_backup//
 set colorcolumn=81 "column line marker
 set cursorline " highlight line
+set directory=~/.vim/_swap//
 set expandtab " prefer spaces to tabs
 set history=25 " command history buffer
 set hlsearch " highlighted search match, reset :nohlsearch
@@ -23,4 +33,7 @@ set showmatch " matching brackets,braces,parenthesis
 set softtabstop=4 " spaces for single tab editing
 set tabstop=4 " display spaces for single tab
 set ttyfast "using fast terminal screen, if not already default
+set undodir=~/.vim/_undo//
 set wildmenu " wildcard autocomplete with <TAB>
+
+colorscheme solarized  " last entry
