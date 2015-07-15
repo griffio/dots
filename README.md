@@ -1,5 +1,5 @@
 # dots
-environment files for vim etc
+environment files for vim, pathogen bundles, clojure
 
 Change the java environment e.g. % javahome 1.7
 
