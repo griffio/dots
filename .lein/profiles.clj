@@ -1,4 +1,5 @@
-{:user {:plugins [[venantius/ultra "0.3.4"]]
+{:user {:plugins [[venantius/ultra "0.3.4"]
+                  [lein-try "0.4.3"]]
         :ultra {:color-scheme {:delimiter [:red]
                                :tag [:red]
                                :nil [:cyan]
