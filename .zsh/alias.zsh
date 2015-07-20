@@ -11,5 +11,4 @@ alias ls='ls -GFh' # Colorize output, add file type indicator, and put sizes in 
 alias ll='ls -GFhl' # ditto ls, in long listing format
 
 #git
-alias cdgh='git rev-parse --show-toplevel'
-
+alias cdg='cd `git rev-parse --show-toplevel`'
