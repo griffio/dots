@@ -16,6 +16,7 @@ set backupdir=~/.vim/_backup//
 set colorcolumn=81 "column line marker
 set cursorline " highlight line
 set directory=~/.vim/_swap//
+set encoding=utf-8
 set expandtab " prefer spaces to tabs
 set history=25 " command history buffer
 set hlsearch " highlighted search match, reset :nohlsearch
@@ -31,9 +32,16 @@ set scrolloff=3 " visible lines of scroll
 set showcmd " command visible
 set showmatch " matching brackets,braces,parenthesis
 set softtabstop=4 " spaces for single tab editing
+set t_Co=16 " bold text
 set tabstop=4 " display spaces for single tab
+set ttimeoutlen=100 " keycode timeout default is -1"
 set ttyfast "using fast terminal screen, if not already default
 set undodir=~/.vim/_undo//
 set wildmenu " wildcard autocomplete with <TAB>
 
-colorscheme solarized  " last entry
+if has('gui_running')
+  set guifont=Menlo:h16
+  colorscheme solarized
+endif
+
+au CursorHoldI * stopinsert "revert to normal after about 6 secs of inactivity
