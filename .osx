@@ -1,0 +1,12 @@
+defaults write NSGlobalDomain KeyRepeat -int 1
+
+defaults write com.apple.Safari HomePage -string "" 
+
+defaults write com.apple.Safari UniversalSearchEnabled -bool false
+
+defaults write com.apple.Safari SuppressSearchSuggestions -bool true
+
+defaults write com.apple.Safari IncludeDevelopMenu -bool true 
+
+echo "changes to defaults require logout to take effect."
+
