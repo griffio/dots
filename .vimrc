@@ -26,6 +26,7 @@ set laststatus=2 " always show status, customise with set statusline =
 set lazyredraw " minimum redraw
 set nocompatible " set when using vimrc anyway
 set number " line numbering
+set clipboard+=unnamed  " use the clipboards of vim and win
 set relativenumber " show offset line number from current
 set ruler " current position, customise with set rulerformat=%l,%c%V%=%P
 set scrolloff=3 " visible lines of scroll
