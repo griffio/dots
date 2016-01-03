@@ -5,10 +5,10 @@ alias zln='noglob zmv -L'
 alias zlns='noglob zmv -Ls'
 
 alias lh='ls -d .*' # show hidden files/directories only
-alias lsd='ls -aFhlG'
-alias l='ls -al'
+alias lsa='ls -aFhlG' # ls all human readable long format
+alias l='ls -al' # ls all long format
 alias ls='ls -GFh' # Colorize output, add file type indicator, and put sizes in human readable format
 alias ll='ls -GFhl' # ditto ls, in long listing format
-
+alias ltr='ls -ltr' # ls reverse time modified
 #git
 alias cdg='cd `git rev-parse --show-toplevel`'
