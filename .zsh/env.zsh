@@ -1,3 +1,4 @@
+export HOMEBREW_NO_ANALYTICS=1
 export KEYTIMEOUT=1
 export VISUAL=vim
 export EDITOR=$VISUAL
