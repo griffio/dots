@@ -4,4 +4,9 @@
 [core]
 	excludesfile = ~/.gitignore-osx
 [alias]
-	lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+    cleanse = git reset --hard HEAD && git clean -d -f
+	discard = checkout -- 
+	graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
+	look = diff --cached --diff-algorithm=minimal -w
+	remove = reset -q HEAD --
+
