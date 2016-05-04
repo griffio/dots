@@ -10,9 +10,32 @@ function javahome() {
 ~~~
 
 npm
+---
+
+add shared npm repo to system
 
 ~~~
-mkdir /usr/local/share/.npm-global
+sudo mkdir /usr/local/share/.npm-global
+~~~
+
+set npm repo location prefix
+
+use .npmrc
+
+or
+
+~~~
 export NPM_CONFIG_PREFIX=/usr/local/share/.npm-global
+~~~
+
+set PATH for npm bin
+
+~~~
+echo '/usr/local/share/.npm-global/bin' | sudo tee /etc/paths.d/npm-bin-path > /dev/null
+~~~
+
+or
+
+~~~
 export PATH=/usr/local/share/.npm-global/bin:$PATH
 ~~~
