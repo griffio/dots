@@ -7,3 +7,4 @@ bindkey "[B"      history-search-forward
 bindkey "[A"      history-search-backward             
 bindkey "^D"      delete-char                         
 bindkey "^F"      vi-cmd-mode                       
+bindkey "^[[3~" delete-char
