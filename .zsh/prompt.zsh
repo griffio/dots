@@ -1,5 +1,5 @@
 autoload -U promptinit && promptinit
-prompt bart
+prompt pure
 
 function zle-line-init zle-keymap-select {
     RPS1="${${KEYMAP/vicmd/-NOR-}/(main|viins)/-INS-}"
