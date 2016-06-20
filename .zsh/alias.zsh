@@ -13,4 +13,5 @@ alias ltr='ls -ltr' # ls reverse time modified
 #git
 alias cdg='cd `git rev-parse --show-toplevel`'
 alias jdk8='/usr/libexec/java_home -V -v "1.8+"'
-alias tcpls='lsof -iTCP -sTCP:LISTEN -n -P'
+alias lstcp='sudo lsof -iTCP -sTCP:LISTEN -n -P'
+alias lsip='sudo lsof -i -P | grep LISTEN'
