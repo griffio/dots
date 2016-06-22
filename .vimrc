@@ -17,7 +17,7 @@ set colorcolumn=81 "column line marker
 set cursorline " highlight line
 set directory=~/.vim/_swap//
 set encoding=utf-8
-set expandtab " prefer spaces to tabs
+set hidden " hidden background buffer
 set history=25 " command history buffer
 set hlsearch " highlighted search match, reset :nohlsearch
 set ignorecase " ignore case when searching
@@ -25,7 +25,7 @@ set incsearch " active incremental search
 set laststatus=2 " always show status, customise with set statusline =
 set lazyredraw " minimum redraw
 set nolist " switch off list chars initially
-set listchars=trail:·,tab:➪· " Show extra whitespace
+set listchars=eol:↵,trail:·,tab:➪· " Show extra whitespace
 set nocompatible " set when using vimrc anyway
 set number " line numbering
 set clipboard+=unnamed
