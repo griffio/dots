@@ -43,3 +43,14 @@ or
 ~~~
 export PATH=/usr/local/share/.npm-global/bin:$PATH
 ~~~
+
+golang
+---
+
+~~~
+sudo mkdir /usr/local/share/.go
+~~~
+
+~~~
+echo '/usr/local/share/.go/bin' | sudo tee /etc/paths.d/golang-path > /dev/null
+~~~
