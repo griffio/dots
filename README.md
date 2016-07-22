@@ -47,6 +47,13 @@ export PATH=/usr/local/share/.npm-global/bin:$PATH
 golang
 ---
 
+assumes .zsh/env.zsh
+
+~~~
+export GOPATH=/usr/local/share/.go
+export GOROOT=/usr/local/opt/go/libexec
+~~~
+
 ~~~
 sudo mkdir /usr/local/share/.go
 ~~~
