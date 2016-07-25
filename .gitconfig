@@ -9,4 +9,6 @@
 	graph = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit
 	look = diff --cached --diff-algorithm=minimal -w
 	remove = reset -q HEAD --
-
+        untrack = update-index --assume-unchanged 
+        retrack = update-index --no-assume-unchanged
+        untracked = ls-files -v | grep ^[a-z]
