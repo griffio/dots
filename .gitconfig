@@ -13,3 +13,4 @@
 	untrack = update-index --assume-unchanged 
 	retrack = update-index --no-assume-unchanged
 	untracked = ls-files -v | grep ^[a-z]
+	amend = commit -a --amend --no-edit
